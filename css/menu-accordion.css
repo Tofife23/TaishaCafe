@@ -1,0 +1,154 @@
+/* ==========================================================
+   Rozbalovací karty menu
+   Načítat AŽ PO menu-page.css (nebo vložit na jeho konec).
+   Třídy .is-accordion / .is-open přidává menu-accordion.js,
+   takže bez JavaScriptu zůstane menu celé rozbalené.
+   ========================================================== */
+
+/* Karty se nesmí natahovat podle sousední karty */
+.menu-catalog {
+  align-items: start;
+}
+
+/* Desktop: dva nezávislé sloupce (vytváří je menu-accordion.js) */
+.menu-catalog.has-columns {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.menu-catalog.has-columns .menu-col {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* --- Hlavička karty = tlačítko --- */
+.menu-accordion-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  background: none;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.menu-accordion-trigger:focus-visible {
+  outline: 2px solid var(--sage);
+  outline-offset: 6px;
+}
+
+/* Nadpis vyplní celou hlavičku, ikona tak sedí u pravého okraje */
+.menu-category.is-accordion .menu-category-head h2 {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Zavřená karta: hlavička bez spodní čáry a mezery */
+.menu-category.is-accordion .menu-category-head {
+  transition: margin-bottom .4s ease, padding-bottom .4s ease, border-color .4s ease;
+}
+
+.menu-category.is-accordion:not(.is-open) .menu-category-head {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom-color: transparent;
+}
+
+/* --- Ikona + / − --- */
+.menu-accordion-icon {
+  position: relative;
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  transition: background .25s ease, border-color .25s ease;
+}
+
+.menu-accordion-icon::before,
+.menu-accordion-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 1.5px;
+  background: var(--ink);
+  transition: transform .4s cubic-bezier(.2, .7, .2, 1), background .25s ease;
+}
+
+.menu-accordion-icon::before {
+  transform: translate(-50%, -50%);
+}
+
+.menu-accordion-icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.menu-category.is-open .menu-accordion-icon::after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.menu-category.is-open .menu-accordion-icon {
+  border-color: var(--ink);
+}
+
+.menu-accordion-trigger:hover .menu-accordion-icon {
+  background: var(--sage);
+  border-color: var(--sage);
+}
+
+.menu-accordion-trigger:hover .menu-accordion-icon::before,
+.menu-accordion-trigger:hover .menu-accordion-icon::after {
+  background: var(--cream);
+}
+
+/* --- Obsah karty (plynulé rozbalení) --- */
+.menu-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  visibility: hidden;
+  transition: grid-template-rows .45s cubic-bezier(.2, .7, .2, 1), visibility 0s linear .45s;
+}
+
+.menu-category.is-open > .menu-panel {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  transition: grid-template-rows .45s cubic-bezier(.2, .7, .2, 1), visibility 0s;
+}
+
+.menu-panel-inner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .menu-accordion-icon {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-panel,
+  .menu-category.is-open > .menu-panel,
+  .menu-category.is-accordion .menu-category-head,
+  .menu-accordion-icon,
+  .menu-accordion-icon::before,
+  .menu-accordion-icon::after {
+    transition: none;
+  }
+}

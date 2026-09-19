@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Základ -->
+    <title>Taisha — matcha, káva a něco sladkého | Brno</title>
+    <meta name="description" content="Taisha — japonská matcha, výběrová káva, čaje a dezerty inspirované Asií. Kavárna v Brně-Bohunicích, brzy i v Jihlavě." />
+    <link rel="canonical" href="https://taishacafe.cz/uvod/" />
+    <meta name="theme-color" content="#5B1F28" />
+    <link rel="icon" type="image/png" href="../img/logo.png" />
+
+    <!-- Open Graph (Facebook, Instagram, WhatsApp, iMessage, Slack…) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Taisha" />
+    <meta property="og:locale" content="cs_CZ" />
+    <meta property="og:title" content="Taisha — matcha, káva a něco sladkého" />
+    <meta property="og:description" content="Japonská matcha, výběrová káva, čaje a dezerty inspirované Asií. Kavárna v Brně-Bohunicích, brzy i v Jihlavě." />
+    <meta property="og:url" content="https://taishacafe.cz/uvod/" />
+    <meta property="og:image" content="https://taishacafe.cz/img/kava.jpg" />
+    <meta property="og:image:alt" content="Matcha latte a dezerty na stole v kavárně Taisha" />
+
+    <!-- X / Twitter (ostatní údaje si bere z Open Graph) -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Strukturovaná data pro Google (kavárna, adresa, otevírací doba) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "name": "Taisha",
+      "description": "Japonská matcha, výběrová káva, čaje a dezerty inspirované Asií.",
+      "url": "https://taishacafe.cz/uvod/",
+      "image": "https://taishacafe.cz/img/kava.jpg",
+      "logo": "https://taishacafe.cz/img/logo.png",
+      "telephone": "+420704533333",
+      "email": "taisha.brno@seznam.cz",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Netroufalky 770",
+        "addressLocality": "Brno",
+        "addressCountry": "CZ"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "07:30",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday", "Sunday"],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/taisha.cafe",
+        "https://www.tiktok.com/@taisha.cafe",
+        "https://www.facebook.com/profile.php?id=61593420006501"
+      ]
+    }
+    </script>
+
+    <!-- Rychlejší načtení písem (style.css je stahuje z Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Styly patří do <head>, ne pod obsah -->
+    <link rel="stylesheet" href="../css/style.css?v=2" />
+    <link rel="stylesheet" href="../css/menu-page.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!-- Obsah stránky vykresluje main.js; tohle uvidí vyhledávače a lidé bez JavaScriptu -->
+    <noscript>
+      <p>
+        Taisha — matcha, káva a dezerty. Netroufalky 770, Brno-Bohunice.
+        Po–Pá 7:30–20:00, So–Ne 8:00–20:00.
+        <a href="../menu/">Menu</a> ·
+        <a href="https://www.instagram.com/taisha.cafe">Instagram</a>
+      </p>
+    </noscript>
+
+    <script src="../js/main.js?v=2"></script>
+  </body>
+</html>
