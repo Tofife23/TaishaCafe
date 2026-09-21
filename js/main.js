@@ -11,13 +11,13 @@ const images = {
   galleryThree: 'https://images.pexels.com/photos/36737003/pexels-photo-36737003.jpeg?auto=compress&cs=tinysrgb&w=1000',
 }
 
-const announcementText = 'MATCHA • COFFEE • TEA • ASIAN SOUL'
+const announcementText = 'MATCHA • COFFEE • TEA • JAPANESE DESSERTS'
 const announcementItems = Array.from({ length: 12 }, () => `<span>${announcementText}</span>`).join('')
 
 document.querySelector('#app').innerHTML = `
     <div class="announcement-bar" aria-label="Announcement">
     <div class="announcement-track">
-      <div class="announcement-group" aria-label="MATCHA • COFFEE • TEA • ASIAN SOUL">${announcementItems}</div>
+      <div class="announcement-group" aria-label="MATCHA • COFFEE • TEA • JAPANESE DESSERTS">${announcementItems}</div>
       <div class="announcement-group" aria-hidden="true">${announcementItems}</div>
     </div>
   </div>
@@ -64,8 +64,10 @@ document.querySelector('#app').innerHTML = `
       <div class="location-grid">
         <article class="location-card reveal">
           <div class="card-image"><img src="${images.locationOne}" alt="Taisha — Campus, Brno" /><span class="card-number">01</span></div>
-          <div class="card-content"><div><p class="eyebrow">Brno</p><h3>Campus</h3></div><a class="circle-arrow" href="#find-us" aria-label="Zobrazit pobočku Campus">↗</a><p class="location-meta">Kampus, Brno<br /><span>Po–Pá 7:30–20:00 · So–Ne 8:00–20:00</span></p></div>
-        </article>
+          <div class="card-content"><div><p class="eyebrow">Brno</p><h3>Campus</h3></div><a class="circle-arrow" href="#find-us" aria-label="Zobrazit pobočku Campus">↗</a><p class="location-meta">OC Campus, Netroufalky 770, Brno<br /><span>Po–Pá 7:30–20:00 · So–Ne 8:00–20:00</span></p></div>
+        
+          </article>
+        
         <!--
         <article class="location-card reveal reveal-delay coming-soon">
           <div class="card-image">
@@ -91,9 +93,9 @@ document.querySelector('#app').innerHTML = `
       <div class="menu-top reveal"><div><p class="eyebrow">Co u nás dostanete</p><h2>Naše<br /><em>menu</em></h2></div><p class="menu-note">Káva, matcha a dezerty.</p></div>
       <div class="menu-layout">
         <div class="menu-list reveal">
-          <div class="menu-row"><div><span class="menu-index">01</span><h3>Matcha</h3></div><p>ceremoniální · latte · ledová</p><span class="menu-plus">+</span></div>
-          <div class="menu-row"><div><span class="menu-index">02</span><h3>Káva</h3></div><p>espresso · filtrovaná · ovesné</p><span class="menu-plus">+</span></div>
-          <div class="menu-row"><div><span class="menu-index">03</span><h3>Dezerty</h3></div><p>croissanty · dorty · sušenky</p><span class="menu-plus">+</span></div>
+          <div class="menu-row"><div><span class="menu-index">01</span><h3>Matcha</h3></div><p>usucha · latte · ledové</p><span class="menu-plus">+</span></div>
+          <div class="menu-row"><div><span class="menu-index">02</span><h3>Káva</h3></div><p>espresso · filtr · ledové</p><span class="menu-plus">+</span></div>
+          <div class="menu-row menu-row-single"><div><span class="menu-index">03</span><h3>Japonské dezerty</h3></div><span class="menu-plus">+</span></div>
           <a class="button button-outline" href="../menu/">Zobrazit celé menu <span>↗</span></a>
         </div>
         <div class="menu-image reveal reveal-delay"><img src="${images.menu}" alt="Matcha latte a dezerty na stole" /></div>
@@ -130,7 +132,12 @@ Kávu doplňuje japonská matcha, pečlivě vybrané čaje a čerstvé dezerty i
     <section class="find-us section-pad" id="find-us">
       <div class="find-heading reveal"><p class="eyebrow">Otevírací doba a adresa</p><h2>Najdete nás<br /><em>tady</em></h2></div>
       <div class="find-list reveal reveal-delay">
-        <div class="find-row"><span class="find-number">01</span><div><h3>Campus, Brno</h3><p>Kampus<br />Brno</p></div><div class="find-hours"><span>Otevírací doba</span><p>Po–Pá 7:30–20:00<br />So–Ne 8:00–20:00</p></div><a class="circle-arrow" href="https://maps.google.com" target="_blank" rel="noreferrer" aria-label="Otevřít Campus v Google Maps">↗</a></div>
+        <div class="find-row"><span class="find-number">01</span><div><h3>OC Campus, Brno</h3><p>Netroufalky 770<br />625 00 Brno</p></div><div class="find-hours"><span>Otevírací doba</span><p>Po–Pá 7:30–20:00<br />So–Ne 8:00–20:00</p></div><a class="circle-arrow" href="https://www.google.com/maps/search/?api=1&query=Taisha+OC+Campus+Netroufalky+770+Brno" target="_blank" rel="noreferrer" aria-label="Otevřít OC Campus v Google Maps">↗</a></div>
+        <div class="find-directions">
+          <div class="direction-item"><span>Kudy</span><p>Z ulice Kamenice, roh mezi Raiffeisenbank a výdejními boxy</p></div>
+          <div class="direction-item"><span>Parkování</span><p>Doporučujeme zaparkovat v garáži</p></div>
+          <div class="direction-item"><span>Vchod</span><p>Do kavárny u sloupu s písmenem O</p></div>
+        </div>
         <!--
         <div class="find-row coming-soon"><span class="find-number">02</span><div><div class="coming-label">JIHLAVA · <span class="coming-badge">PŘIPRAVUJEME</span></div><h3>Jihlava</h3><p>Plánované otevření<br />listopad 2026</p></div><div class="find-hours"><span>Stav</span><p>Plánované otevření — sledujte nás</p></div><a class="circle-arrow" href="#" aria-label="Informace o otevření Jihlava">↗</a></div>
         -->
@@ -191,7 +198,7 @@ Kávu doplňuje japonská matcha, pečlivě vybrané čaje a čerstvé dezerty i
         </div>
       </div>
 
-      <p class="footer-tagline">Matcha, káva<br />a dezerty.</p>
+      <p class="footer-tagline">Matcha, káva<br />a japonské dezerty.</p>
     </div>
     <div class="footer-bottom"><span>© 2026 Taisha</span><a href="#top">Nahoru ↑</a></div>
   </footer>
