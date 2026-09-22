@@ -135,8 +135,8 @@ Kávu doplňuje japonská matcha, pečlivě vybrané čaje a čerstvé dezerty i
         <div class="find-row"><span class="find-number">01</span><div><h3>OC Campus, Brno</h3><p>Netroufalky 770<br />625 00 Brno</p></div><div class="find-hours"><span>Otevírací doba</span><p>Po–Pá 7:30–20:00<br />So–Ne 8:00–20:00</p></div><a class="circle-arrow" href="https://www.google.com/maps/search/?api=1&query=Taisha+OC+Campus+Netroufalky+770+Brno" target="_blank" rel="noreferrer" aria-label="Otevřít OC Campus v Google Maps">↗</a></div>
         <div class="find-directions">
           <div class="direction-item"><span>Kudy</span><p>Z ulice Kamenice, roh mezi Raiffeisenbank a výdejními boxy</p></div>
-          <div class="direction-item"><span>Parkování</span><p>Doporučujeme zaparkovat v garáži</p></div>
-          <div class="direction-item"><span>Vchod</span><p>Do kavárny u sloupu s písmenem O</p></div>
+          <div class="direction-item"><span>Parkování</span><p>Doporučujeme zaparkovat v krytém parkovišti</p></div>
+          <div class="direction-item"><span>Vchod z krytého parkoviště </span><p>U sloupu s písmenem O</p></div>
         </div>
         <!--
         <div class="find-row coming-soon"><span class="find-number">02</span><div><div class="coming-label">JIHLAVA · <span class="coming-badge">PŘIPRAVUJEME</span></div><h3>Jihlava</h3><p>Plánované otevření<br />listopad 2026</p></div><div class="find-hours"><span>Stav</span><p>Plánované otevření — sledujte nás</p></div><a class="circle-arrow" href="#" aria-label="Informace o otevření Jihlava">↗</a></div>
