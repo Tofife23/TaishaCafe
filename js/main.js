@@ -1,14 +1,14 @@
 // CSS is loaded from index.html for direct browser usage.
 
 const images = {
-  hero: 'https://images.pexels.com/photos/16514703/pexels-photo-16514703.jpeg?auto=compress&cs=tinysrgb&w=1800',
-  menu: '../img/kava.jpg',
-  locationOne: 'https://images.pexels.com/photos/1002740/pexels-photo-1002740.jpeg?auto=compress&cs=tinysrgb&w=1200',
-  locationTwo: 'https://images.pexels.com/photos/17593509/pexels-photo-17593509.jpeg?auto=compress&cs=tinysrgb&w=1200',
-  story: 'https://images.pexels.com/photos/8474151/pexels-photo-8474151.jpeg?auto=compress&cs=tinysrgb&w=1200',
-  galleryOne: 'https://images.pexels.com/photos/34104248/pexels-photo-34104248.jpeg?auto=compress&cs=tinysrgb&w=1000',
-  galleryTwo: 'https://images.pexels.com/photos/27362267/pexels-photo-27362267.jpeg?auto=compress&cs=tinysrgb&w=1000',
-  galleryThree: 'https://images.pexels.com/photos/36737003/pexels-photo-36737003.jpeg?auto=compress&cs=tinysrgb&w=1000',
+  hero: '../img/interier2.jpg',
+  menu: '../img/kava4.jpg',
+  locationOne: '../img/interier1.jpg',
+  locationTwo: '',
+  story: '../img/kava2.jpg',
+  galleryOne: '../img/interier4.jpg',
+  galleryTwo: '../img/kava3.jpg',
+  galleryThree: '../img/matcha.jpg',
 }
 
 const announcementText = 'MATCHA • COFFEE • TEA • JAPANESE DESSERTS'
