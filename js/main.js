@@ -2,7 +2,7 @@
 
 const images = {
   hero: '../img/interier2.jpg',
-  menu: '../img/kava4.jpg',
+  menu: '../img/kava4.webp',
   locationOne: '../img/interier1.jpg',
   locationTwo: '',
   story: '../img/kava2.jpg',
