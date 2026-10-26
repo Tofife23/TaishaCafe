@@ -1,14 +1,14 @@
 // CSS is loaded from index.html for direct browser usage.
 
 const images = {
-  hero: '../img/interier2.jpg',
+  hero: '../img/interier2.webp',
   menu: '../img/kava4.webp',
-  locationOne: '../img/interier1.jpg',
+  locationOne: '../img/interier1.webp',
   locationTwo: '',
-  story: '../img/kava2.jpg',
-  galleryOne: '../img/interier4.jpg',
-  galleryTwo: '../img/kava3.jpg',
-  galleryThree: '../img/matcha.jpg',
+  story: '../img/kava2.webp',
+  galleryOne: '../img/interier4.webp',
+  galleryTwo: '../img/kava3.webp',
+  galleryThree: '../img/matcha.webp',
 }
 
 const announcementText = 'MATCHA • COFFEE • TEA • JAPANESE DESSERTS'
