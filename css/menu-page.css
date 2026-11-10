@@ -91,6 +91,12 @@
   gap: 28px;
 }
 
+.allergen-menu-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 28px;
+}
+
 .menu-category {
   position: relative;
   padding: clamp(24px, 3vw, 38px);
@@ -176,6 +182,165 @@
   background: linear-gradient(180deg, rgba(255,255,255,.82), rgba(255,255,255,.42));
 }
 
+.allergen-menu-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px 26px;
+  border: 1px solid rgba(91,31,40,.18);
+  border-left: 3px solid #5B1F28;
+  border-radius: 16px;
+  background: rgba(255,255,255,.48);
+}
+
+.allergen-menu-card h2 {
+  margin: 0 0 7px;
+  color: #5B1F28;
+  font-size: clamp(20px, 2.4vw, 28px);
+  letter-spacing: -.04em;
+}
+
+.allergen-menu-card p {
+  margin: 0;
+  color: #5d5c52;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.allergen-menu-button {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 12px 16px;
+  border-radius: 4px;
+  background: #5B1F28;
+  color: #fff;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  transition: background .2s ease;
+}
+
+.allergen-menu-button:hover {
+  background: #43171e;
+}
+
+.allergen-page-hero h1 {
+  max-width: 900px;
+  font-size: clamp(44px, 8vw, 96px);
+}
+
+.allergen-content {
+  max-width: 920px;
+  margin: 0 auto;
+  padding-bottom: 110px;
+}
+
+.allergen-intro {
+  max-width: 720px;
+  margin: 0 0 38px;
+  color: #5d5c52;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.allergen-section-title {
+  margin: 0 0 18px;
+  color: var(--ink);
+  font-size: clamp(28px, 4vw, 42px);
+  letter-spacing: -.05em;
+}
+
+.allergen-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border: 1px solid rgba(37,38,31,.12);
+  border-radius: 16px;
+  background: rgba(255,255,255,.4);
+}
+
+.allergen-table th,
+.allergen-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(37,38,31,.1);
+  text-align: left;
+  line-height: 1.5;
+}
+
+.allergen-table thead th {
+  background: rgba(91,31,40,.08);
+  color: #5B1F28;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.allergen-table tbody tr:nth-child(even) {
+  background: rgba(255,255,255,.42);
+}
+
+.allergen-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.allergen-table .allergen-number {
+  width: 100px;
+  color: #5B1F28;
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.allergen-info {
+  margin-top: 32px;
+  padding: clamp(22px, 4vw, 32px);
+  border: 1px solid rgba(91,31,40,.18);
+  border-radius: 18px;
+  background: rgba(91,31,40,.06);
+}
+
+.allergen-info h2 {
+  margin: 0 0 12px;
+  color: #5B1F28;
+  font-size: clamp(24px, 3.5vw, 34px);
+  letter-spacing: -.05em;
+}
+
+.allergen-info p {
+  margin: 0;
+  color: #4f4e46;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.allergen-page-body {
+  min-width: 0;
+  overflow-x: clip;
+}
+
+.allergen-page-body .footer-socials {
+  min-width: 0;
+}
+
+.menu-note a {
+  color: #5B1F28;
+  text-decoration: underline;
+  text-decoration-color: rgba(91,31,40,.4);
+  text-underline-offset: 3px;
+}
+
+.menu-note a:hover {
+  text-decoration-color: currentColor;
+}
+
 @media (max-width: 980px) {
   .menu-catalog {
     grid-template-columns: 1fr;
@@ -206,6 +371,32 @@
     padding: 20px 18px;
   }
 
+  .allergen-menu-card {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .allergen-menu-button {
+    min-height: 48px;
+    max-width: 100%;
+  }
+
+  .allergen-content {
+    padding-bottom: 80px;
+  }
+
+  .allergen-intro {
+    margin-bottom: 28px;
+    font-size: 15px;
+  }
+
+  .allergen-table th,
+  .allergen-table td {
+    padding: 12px 14px;
+  }
+
   .menu-category-head {
     display: block;
     padding-bottom: 12px;
@@ -227,4 +418,17 @@
   .menu-product:not(:has(.menu-item-desc)) {
   align-items: center;
 }
+}
+
+@media (max-width: 480px) {
+  .allergen-table th,
+  .allergen-table td {
+    padding: 11px 10px;
+    font-size: 13px;
+  }
+
+  .allergen-table .allergen-number {
+    width: 68px;
+    font-size: 12px;
+  }
 }

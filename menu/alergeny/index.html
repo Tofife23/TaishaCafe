@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alergeny | TAISHA</title>
+    <meta name="description" content="Přehled 14 skupin alergenů a informace o alergenech v produktech kavárny TAISHA." />
+    <link rel="canonical" href="https://www.taishacafe.cz/menu/alergeny/" />
+    <meta name="theme-color" content="#5B1F28" />
+    <link rel="icon" type="image/png" href="../../img/logo.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Taisha" />
+    <meta property="og:locale" content="cs_CZ" />
+    <meta property="og:title" content="Alergeny | TAISHA" />
+    <meta property="og:description" content="Přehled 14 skupin alergenů a informace o alergenech v produktech kavárny TAISHA." />
+    <meta property="og:url" content="https://www.taishacafe.cz/menu/alergeny/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../../css/style.css?v=2" />
+    <link rel="stylesheet" href="../../css/menu-page.css?v=4" />
+  </head>
+  <body class="menu-page-body allergen-page-body">
+    <div class="announcement-bar" aria-label="Announcement">
+      <div class="announcement-track" id="announcement-track"></div>
+    </div>
+    <script>
+      const announcementText = 'MATCHA • COFFEE • TEA • JAPANESE DESSERTS';
+      const announcementItems = Array.from({ length: 12 }, () => `<span>${announcementText}</span>`).join('');
+      document.getElementById('announcement-track').innerHTML =
+        `<div class="announcement-group" aria-label="Otevíráme brzy">${announcementItems}</div>` +
+        `<div class="announcement-group" aria-hidden="true">${announcementItems}</div>`;
+    </script>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="../../uvod/" aria-label="Taisha — domů">TAISHA<span class="brand-dot">.</span></a>
+      <nav class="desktop-nav" aria-label="Hlavní navigace">
+        <a href="../">Menu</a>
+        <a href="../../uvod/#locations">Pobočky</a>
+        <a href="../../uvod/#about">O nás</a>
+        <a href="../../uvod/#space">Prostor</a>
+        <a href="https://www.instagram.com/taisha.cafe/" target="_blank" rel="noreferrer">Instagram</a>
+      </nav>
+      <a class="header-visit" href="../../uvod/#find-us">Navštívit <span>↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="Otevřít menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main class="page-shell">
+      <section class="menu-page-hero allergen-page-hero section-pad">
+        <p class="eyebrow">TAISHA</p>
+        <h1>Informace o alergenech</h1>
+      </section>
+
+      <section class="allergen-content section-pad" aria-labelledby="allergen-list-heading">
+        <p class="allergen-intro">V zájmu vašeho pohodlí a bezpečí uvádíme přehled 14 skupin alergenů, které mohou být součástí potravin a nápojů.</p>
+        <h2 class="allergen-section-title" id="allergen-list-heading">Přehled skupin alergenů</h2>
+        <table class="allergen-table">
+          <thead>
+            <tr>
+              <th scope="col">Číslo</th>
+              <th scope="col">Skupina alergenu</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="allergen-number">1</td><td>Obiloviny obsahující lepek</td></tr>
+            <tr><td class="allergen-number">2</td><td>Korýši a výrobky z nich</td></tr>
+            <tr><td class="allergen-number">3</td><td>Vejce a výrobky z nich</td></tr>
+            <tr><td class="allergen-number">4</td><td>Ryby a výrobky z nich</td></tr>
+            <tr><td class="allergen-number">5</td><td>Arašídy a výrobky z nich</td></tr>
+            <tr><td class="allergen-number">6</td><td>Sójové boby a výrobky z nich</td></tr>
+            <tr><td class="allergen-number">7</td><td>Mléko a výrobky z něj</td></tr>
+            <tr><td class="allergen-number">8</td><td>Skořápkové plody</td></tr>
+            <tr><td class="allergen-number">9</td><td>Celer a výrobky z něj</td></tr>
+            <tr><td class="allergen-number">10</td><td>Hořčice a výrobky z ní</td></tr>
+            <tr><td class="allergen-number">11</td><td>Sezamová semena</td></tr>
+            <tr><td class="allergen-number">12</td><td>Oxid siřičitý a siřičitany</td></tr>
+            <tr><td class="allergen-number">13</td><td>Vlčí bob (lupina) a výrobky z něj</td></tr>
+            <tr><td class="allergen-number">14</td><td>Měkkýši a výrobky z nich</td></tr>
+          </tbody>
+        </table>
+
+        <aside class="allergen-info" aria-labelledby="allergen-info-heading">
+          <h2 id="allergen-info-heading">Alergeny v našich produktech</h2>
+          <p>Informace o konkrétních alergenech obsažených v jednotlivých produktech vám rádi poskytneme na vyžádání u obsluhy. Pokud máte potravinovou alergii nebo intoleranci, neváhejte se na nás obrátit.</p>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="instagram">
+      <div class="footer-top">
+        <a class="brand footer-brand" href="../../uvod/">TAISHA<span class="brand-dot">.</span></a>
+        <div class="footer-meta">
+          <div class="footer-contact">
+            <h4>Kontakt</h4>
+            <ul>
+              <li class="contact-item contact-phone">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4.5a2.5 2.5 0 0 1 2.5-2.5h5A2.5 2.5 0 0 1 17 4.5v15A2.5 2.5 0 0 1 14.5 22h-5A2.5 2.5 0 0 1 7 19.5v-15Z"/><path d="M9.5 2.8h5"/><path d="M11 18.5h2"/><path d="M10.5 7.2h3"/><path d="M10.5 10.2h3"/></svg>
+                <a href="tel:704533333">704 533 333</a>
+              </li>
+              <li class="contact-item contact-email">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 7.5A2.5 2.5 0 0 1 6 5h12a2.5 2.5 0 0 1 2.5 2.5v9A2.5 2.5 0 0 1 18 19H6a2.5 2.5 0 0 1-2.5-2.5v-9Z"/><path d="m4.5 7 7.5 6 7.5-6"/></svg>
+                <a href="mailto:taisha.brno@seznam.cz">taisha.brno@seznam.cz</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-socials">
+            <h4>Sledujte nás</h4>
+            <div class="footer-social-grid">
+              <div class="social-branch">
+                <div class="social-links">
+                  <a href="https://www.facebook.com" target="_blank" rel="noreferrer" class="social-link social-facebook" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 8.5V6.8c0-.9.6-1.3 1.3-1.3h1.6V2.8h-2.8c-2.7 0-3.9 1.7-3.9 3.9v1.8H7.5v3.4h2.4V21h3.6v-9.1h2.7l.4-3.4h-3.1Z" fill="currentColor"/></svg>
+                  </a>
+                  <a href="https://www.instagram.com/taisha.cafe" target="_blank" rel="noreferrer" class="social-link social-instagram" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>
+                  </a>
+                  <a href="https://www.tiktok.com/@taisha.cafe" target="_blank" rel="noreferrer" class="social-link social-tiktok" aria-label="TikTok">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 3.2c.8 2 2.2 3.1 4.4 3.4v2.7c-1.7-.1-3.2-.7-4.4-1.8v7.1a5.2 5.2 0 1 1-5.2-5.2c.5 0 .9.1 1.3.2v2.8a2.7 2.7 0 1 0 2.6 2.7V3.2h1.3Z" fill="currentColor"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="footer-tagline">Matcha, káva<br />a pečivo.</p>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Taisha</span><a href="#top">Nahoru ↑</a></div>
+    </footer>
+
+    <div class="mobile-menu" aria-hidden="true">
+      <nav>
+        <a href="../">Menu</a>
+        <a href="../../uvod/#locations">Pobočky</a>
+        <a href="../../uvod/#about">O nás</a>
+        <a href="../../uvod/#space">Prostor</a>
+        <a href="../../uvod/#instagram">Instagram</a>
+      </nav>
+    </div>
+    <script>
+      const header = document.querySelector('.site-header');
+      const menuToggle = document.querySelector('.menu-toggle');
+      const mobileMenu = document.querySelector('.mobile-menu');
+
+      window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 24));
+      menuToggle.addEventListener('click', () => {
+        const isOpen = document.body.classList.toggle('menu-open');
+        menuToggle.setAttribute('aria-expanded', isOpen);
+        mobileMenu.setAttribute('aria-hidden', !isOpen);
+      });
+      document.querySelectorAll('.mobile-menu a').forEach((link) => link.addEventListener('click', () => {
+        document.body.classList.remove('menu-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+      }));
+    </script>
+  </body>
+</html>

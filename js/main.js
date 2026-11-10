@@ -112,7 +112,7 @@ document.querySelector('#app').innerHTML = `
           </div>
           <div class="story-feature">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9.5A13.5 13.5 0 0 1 12 5a13.5 13.5 0 0 1 9.5 4.5"/><path d="M5.5 12.5A10.5 10.5 0 0 1 12 9a10.5 10.5 0 0 1 6.5 3.5"/><path d="M8.5 15.5A7.5 7.5 0 0 1 12 13a7.5 7.5 0 0 1 3.5 2.5"/><circle cx="12" cy="18" r="1.5" fill="currentColor" stroke="none"/></svg>
-            <span>Wi‑Fi zdarma</span>
+            <span>Wi‑Fi zdarma · heslo: doslakava</span>
           </div>
         </div>
         <span class="vertical-label">Taisha</span>
